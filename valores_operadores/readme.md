@@ -1,6 +1,11 @@
 # VAlores, Tipos y Operadores
 ## Indice
-- [tipos de datos o valores](#valores)
+- [VAlores, Tipos y Operadores](#valores-tipos-y-operadores)
+  - [Indice](#indice)
+  - [Valores](#valores)
+  - [Datos Primitivos](#datos-primitivos)
+    - [Numeros(Number)](#numerosnumber)
+      - [Numeros especiales](#numeros-especiales)
 ## Valores
 Imagina un mar de bits
 Una computadora moderna tiene mas de 100 mil millones de bits almacendas en su `memoria de trabajo`o`memoria`o `ram `.
@@ -26,6 +31,19 @@ Los valores de tipo numero como es de esperar son numeros y en Javasript se escr
 //estamos usando un patron de bits para el numero 20 que existira dentro de memoria de trabjo.
 ```
 > [!TIP] 2^64
+```js
+//dato numerico de tipo entero
+//entero positivo
+23
+//entero negativo
+-23
+
+//decimal positivo
+.0
+
+//decimal negativo
+-3,6
+```
 - Nummero de punto flotante decimal fraccion
 ```js
 2.7
@@ -43,3 +61,13 @@ Los valores de tipo numero como es de esperar son numeros y en Javasript se escr
 
 > [!TIP]
 > Cuando javasript hace trabajo de memoria(cuando crea un patron de bits para almacenar)todos son alamcenados con decimal positivo.
+
+#### Numeros especiales
+En JavaSript existen tres valores de tipo numeroque se consideran un dato primitivo numerico de tipo especial.
+```js
+Infinity
+- Infinity
+NaN//Not-a-number
+//no es un numero
+//cuando el resulytado de una operacion es matematicamente imposible.
+```
