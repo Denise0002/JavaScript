@@ -3,9 +3,10 @@
 - [VAlores, Tipos y Operadores](#valores-tipos-y-operadores)
   - [Indice](#indice)
   - [Valores](#valores)
-  - [Datos Primitivos](#datos-primitivos)
+    - [Datos Primitivos](#datos-primitivos)
     - [Numeros(Number)](#numerosnumber)
       - [Numeros especiales](#numeros-especiales)
+      - [Aritmetica](#aritmetica)
 ## Valores
 Imagina un mar de bits
 Una computadora moderna tiene mas de 100 mil millones de bits almacendas en su `memoria de trabajo`o`memoria`o `ram `.
@@ -19,7 +20,7 @@ Cada valor tiene una funcionalidad distinta puede ser un `numero`, `texto` o una
 
 Cuando de hablamos de tipos de datos en JavScript nos referimos a su representacion binaria y al tipo de valor de valor que usamos.
 
-## Datos Primitivos
+### Datos Primitivos
 
 Son aquellos datos que ya existen no pueden ser creados, actualizados, ni eliminados solo pueden ser llamados para el uso que deseamos darle.
 
@@ -71,3 +72,17 @@ NaN//Not-a-number
 //no es un numero
 //cuando el resulytado de una operacion es matematicamente imposible.
 ```
+ #### Aritmetica
+ La principal operacion que se puedehacer con numeros es la aritmetica
+ Para esto tenemos los operadores aritmeticos como:
+ - Suma (+).
+ - Resta (-).
+ - multiplicacion (*).
+ - Division (/).
+ - Potencia (^).
+ - Modulo (%).
+
+**Podemos agrupar operaciones con parentesis () las operacioens que este entre parentesis se ejecutara primero.**
+
+Puedes consultar el archivo el archivo de operadores
+[aqui](./)
