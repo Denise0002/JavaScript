@@ -7,6 +7,9 @@
     - [Numeros(Number)](#numerosnumber)
       - [Numeros especiales](#numeros-especiales)
       - [Aritmetica](#aritmetica)
+      - [Cadenas](#cadenas)
+      - [concatenacion](#concatenacion)
+      - [plantillas literales](#plantillas-literales)
 ## Valores
 Imagina un mar de bits
 Una computadora moderna tiene mas de 100 mil millones de bits almacendas en su `memoria de trabajo`o`memoria`o `ram `.
@@ -84,5 +87,74 @@ NaN//Not-a-number
 
 **Podemos agrupar operaciones con parentesis () las operacioens que este entre parentesis se ejecutara primero.**
 
-Puedes consultar el archivo el archivo de operadores
+Puedes consultar el archivo de operadores
 [aqui](./)
+#### Cadenas
+el siguiente tipo de dato primitivo es la `cadena` - `string`.
+¿para que se usa las cadenas en JavaScript?
+- para presentar texto
+- se escribe encerrado su contenido entre comillas:
+```js
+//cadenas con contenido
+"soy un texto" //comillas dobles
+'tambien soy un texto' //comillas simple
+`yo tambien soy` //acento grave 
+
+//cadenas vacia
+""
+"0"
+```
+**Problema** - como  representamos un texto entre comillas
+para hacer uso de comillas dentro del contenido de una cadena podemos seguir las siguientes recomendaciones:
+```js
+ENMA SCRIPT 6
+//si nuestro texto tine que estar en comillas simples
+"'este texto se muestra entre comillas simples'"
+//si nuestro texto tiene que estar entre comillas dobles
+'"este texto se muestra entre comillas dobles"'
+//si nuestro texto tendra tanto comillas dobles como simples
+`'esta en comillas simples ', "esta en comillas dobles"`
+```
+Otra manera de hacer lo antes mencionado es haciendo uso de la barra invertida`\` tambien conocida como `caracter de escape`
+hacer uso de este caracter indica que el caracter posterior tendra un significado especial.
+```js
+"de este texto solo esta \"palabra\" estara en comillas"
+```
+**Problema** - Deseamos agregar un salto de linea nuestro texto
+```js
+//solucionamos este problema haciendo uso de los acentos graves
+`primera linea
+segunda linea`
+```
+Antes de la incorporacion de `es6` en el uso de acentos graves se utilizaba el caracter de escape`\`
+```js
+"esta es mi primera linea \n y esta es mmi segunda linea"
+```
+**Problema** - Deseo tabular un texto
+```js
+
+`
+este texto no esta tabulado
+    este texto si esta tabulado
+`
+```
+ahora tabularemos 
+
+#### Concatenacion
+Es unico operador aritmetico que puede se usado por cadenas es el operador de suma (+) puede se usado en de dos o mas cadenas y pasa a llamar  operador de concatenacion. lo que realiza a unir cadena en una sola.
+```js
+"hola"+" "+"mundo"
+```
+#### Plantillas literales
+Las plantillas literales mencionadas anteriormente con el nombre de acento graves son usadas para mostrar texto literal, tambien nos permite ejecutar codigo javascript dentro de una plantilla literal el codigo o el restado de este codigo sera transformado en un dato de tipo texto y se incluira en la posicion  en que se encuentre.
+Para hacer uso de esta funcionalidad debemos usa,
+la siguiente expresion `${}`.
+```js
+//creando una plntilla literal - template literals
+``
+
+//usando JavaScript dentro de una plantilla
+`la suma de 1+1 es ${1+1}`
+```
+> [!TIP]
+> Se dice literal por que con el formato que codificamos sera mostrado de esa misma forma en la consola.
