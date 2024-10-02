@@ -15,3 +15,12 @@ console.log(6+4+(6/3)+4)/2
 console.log(((4+5)/8)/((8-6)/4))
 console.log(4+((4+(4/2))/(5+((1+2)/(1+2)))))
 console.log(4+2)+(4/2)+((10/(5-3))/(4/(1+1)))
+
+//crear una variable de numero y mostrar  or terminall el numero sumado masuno
+numro=10
+console.log(num++)
+
+// crear una variabkle que almacene un numero y que por la terminal me 
+numero=20
+console.log(num++)
+console.log(num)

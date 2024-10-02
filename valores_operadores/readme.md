@@ -12,6 +12,7 @@
       - [plantillas literales](#plantillas-literales)
       - [Operadores Unarios](#operadores-unarios)
       - [Valores Boleanos](#valores-boleamos)
+      - [Operador ternario](#operador-ternario)
 ## Valores
 Imagina un mar de bits
 Una computadora moderna tiene mas de 100 mil millones de bits almacendas en su `memoria de trabajo`o`memoria`o `ram `.
@@ -86,6 +87,8 @@ NaN//Not-a-number
  - Division (/).
  - Potencia (^).
  - Modulo (%).
+ - incremento (++)
+ - Decremento(--)
 
 **Podemos agrupar operaciones con parentesis () las operacioens que este entre parentesis se ejecutara primero.**
 
@@ -189,5 +192,20 @@ Para este proposito, JavaScript tiene un tipo de dato `Booleano`, tiene solo dos
    - and (y) Representacion en javascript `&&`,
    - or (o) Representacion edn Javascript `||`,
    - not (no) representacion en js `!`,
+> [!TIP]
+> **AND `&&` `??`**  - si tenemos dos valores verdaderos devolvera el segundo valor verdadero, si tenemos u n valor falso  y uno verdadero devolvera el valor falso.
+
+> [!TIP]
+> **OR `||`** - si tenmos dos valores verdaderos devolver el primer valor verdadero, si tenemosun valor verdadero y uno falso y devolvera el valor verdadero.
   **observacion**
   Este es un operarador unario que su funcion es invertir el valor que tiene a su derecha `!true` produce `false`.
+3. **Usando el operador relacional**
+Este operador compara sus valores y retorna un booleano como resultado. Lo que evalua es si una propiedad especifica se encuentra en un objeto.
+Evalua  si el primer valor que se encuentra a la izquierda existe o forma parte del segundo valor que se encuentra a su derecha.
+```js
+"a" in ["a","e","i","o","U"]
+```
+#### Operador ternario
+Este operador trabaja con tres valores.
+El primer valor es que determinara  si se muestra el resto de valores.
+Eso quiere decir que si el primer valor es verdadero se mostrara el segundo valor mientras que si es falso mostrara el tercer valor .

@@ -22,14 +22,31 @@ console.log("!">="?")
 //Ardvark < Zoroaster
 console.log("Ardvark" > "Zoroaster")
 
-// en elcaso del operador && su resulltado sera verdadero solo si ambos si esta ambos valores son verdaderos
+// en elcaso del operador && su resultado sera verdadero solo si ambos valores son verdaderos
 console.log(true && false)
 console.log(true && true)
+//OBSERVACION: si en ambos valores son verdaderos devolvera el segundo valor
+console.log("hola" && "mundo")
+//OBSERVACION: en caso que exista un valor verdadero y sno falso devolvera el valor falso.
+console.log(0 && "hola")
+
+//OJO: los valores 0. NaN y una cadena vacia "" son considerados false
+
 
 //en el caso del operador || produce verdadero si cualquier de sus valores dados es verdadero.
 console.log(false || false)
 console.log(true || false)
 
+//
+respuesta="te devuelvo los ositos tiernos"
+console.log(respuesta || "tu busqueda no existe")
+console.log(0 || "") //falsex2 =2   truex2
+
 // en el caso del operador ! invierte el valor dado
 console.log(!true)
 console.log(!false)
+
+// usando el operador relacional
+//OBSERVACION:solo funciona en objetos o listas
+//Averigurar por que sale false en este caso.
+console.log("hola" in ["hola","mundo"])
