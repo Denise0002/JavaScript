@@ -124,3 +124,24 @@ else if (total_compra >= 100 && total_compra <500){
     console.log(`Descuento del 50% ${total_compra*0.50}`)
 }
 ```
+### Bucles
+consideremos el siguiente problema
+
+el ejemplo es valido pero la idea cuando programamos es hacer menos trabajo no mas, en el ejercicio anterior tendriamos problemas si deseamos mostrar todos los numeros menosres a 1000.
+Necesitamos una manera de ejecutar un fragment de codigo multiples veces. A esta forma de de control de flujo se le llama `bucle`.
+Para crear un bucle tenemos dos formas de hacerlo
+1. `ehile` -Para hacer uso de este bucle primero debemos usar la palabra clave `while` este  asu vez como el if debera tener una condicion si esta condicion sea falsa el bucle no sera ejecutada.
+```js
+
+```
+2. `for` est aes la manera mas abreviada de crear un bucle en javascript, en el caso de while necesitamos una variable contador lurgo la condicion y finalmente el aumento del contador en el caso de `for` estos tre pasos se realizan em una sola linea.
+```js
+for (let i=2;i<=20;i++){
+    if(i%2==0) console.log(i)
+}
+```
+> [!TIP]
+> `while`  se usa cuando no sabemos la cantidad de veces que deseamos ejecutar un codigo, por lo general su finalizacion requiera de una intervencion externa. `for` se usa cuando sabemos la cantidad de veces que deseamos ejecutar un codigo.
+
+> [!NOTE]
+> para terminar un bucle se hace uso de la palabra reservada `break`
