@@ -2,7 +2,7 @@
 ### Instrucciones
 crear un archivo html  index y asociarlos  a los archivos javascript quye crearan
 crear un archivo js por cada ejercicio
-### ejercicios
+### Ejercicios
 ### 1. Escribe un bucle que realice 7 llamadas console para mostrar el siguiente triangulo:
 #
 ##
