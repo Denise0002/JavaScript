@@ -124,17 +124,33 @@ else if (total_compra >= 100 && total_compra <500){
     console.log(`Descuento del 50% ${total_compra*0.50}`)
 }
 ```
+- **Condicion multiple `swich`**
+Javascript dispone de una opcion para crear estructuras condicionales mulltiples.  `swich` permite crear estructuras mas optimizadas para cubrir un amplio abanico de de posibilidades.
+```js
+let edad=Number(prompt("ingresa la edad"))
+switch (edad){
+    case 4:
+        console.log("tienes 4 años")
+        break
+    case 8:
+        console.log("tienes 8 años")
+        break
+    default:
+        console.log("tienes:",edad)
+        break
+}
+```
 ### Bucles
-consideremos el siguiente problema
+Consideremos el siguiente problema
 
-el ejemplo es valido pero la idea cuando programamos es hacer menos trabajo no mas, en el ejercicio anterior tendriamos problemas si deseamos mostrar todos los numeros menosres a 1000.
+El ejemplo es valido pero la idea cuando programamos es hacer menos trabajo no mas, en el ejercicio anterior tendriamos problemas si deseamos mostrar todos los numeros menosres a 1000.
 Necesitamos una manera de ejecutar un fragment de codigo multiples veces. A esta forma de de control de flujo se le llama `bucle`.
 Para crear un bucle tenemos dos formas de hacerlo
 1. `ehile` -Para hacer uso de este bucle primero debemos usar la palabra clave `while` este  asu vez como el if debera tener una condicion si esta condicion sea falsa el bucle no sera ejecutada.
 ```js
 
 ```
-2. `for` est aes la manera mas abreviada de crear un bucle en javascript, en el caso de while necesitamos una variable contador lurgo la condicion y finalmente el aumento del contador en el caso de `for` estos tre pasos se realizan em una sola linea.
+2. `for` Esta es la manera mas abreviada de crear un bucle en javascript, en el caso de while necesitamos una variable contador lurgo la condicion y finalmente el aumento del contador en el caso de `for` estos tre pasos se realizan em una sola linea.
 ```js
 for (let i=2;i<=20;i++){
     if(i%2==0) console.log(i)
