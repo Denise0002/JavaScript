@@ -31,18 +31,48 @@ REGALOS:
 - si su edad esta entre 9 a 13 años: te ganaras un pelota
 - si su edad esta entre 14 a 17años: te ganaras un celular Nokia 6101
 - si edad es mayor o igual a 18: te ganaras una medias*/
-let edad=Number(prompt("ingresa tu edad"))
-if (edad >=4 && edad <=8){
-    console.log("chupetin")
-}
-else if (edad >=9 && edad <=13){
-    console.log("pelota")
-}
-else if (edad >=14 && edad <=17){
-    console.log("celular Nokia")
-}
-else if (edad <=18 && edad >=100){
-    console.log("medias")
-}else{
-    console.log("cajon")
+// let edad=Number(prompt("ingresa tu edad"))
+// if (edad >=4 && edad <=8){
+//     console.log("chupetin")
+// }
+// else if (edad >=9 && edad <=13){
+//     console.log("pelota")
+// }
+// else if (edad >=14 && edad <=17){
+//     console.log("celular Nokia")
+// }
+// else if (edad <=18 && edad >=100){
+//     console.log("medias")
+// }else{
+//     console.log("cajon")
+// }
+
+//Realizar un programa que pida 5 frutas a traves del navegador
+//y realizara las siguientes evaluaciones 
+//en el caso que sea naranja, limon  "es una fruta citrica"
+//platano,manzana "Es una fruta dulce"
+//fresa,pera,papaya "para la ensalada de fruta"
+//si ingresa otra fruta "no tiene clasificacion"
+
+
+for (let i=1;i<=5;i++){
+    let fruta=prompt("escribe el nombre de  tu fruta numero: ",i)
+    switch (fruta){
+        case "naranja":
+        case "limon":
+            console.log(fruta,"es una fruta citrica")
+            break
+        case "manzana":
+        case "platano":
+            console.log(fruta,"es una fruta dulce")
+            break
+        case "fresa":
+        case "pera":
+        case "papaya":
+            console.log(fruta,"fruta para la ensalada")
+            break
+        default:
+            console.log("no esta clasificado")
+            break
+    }
 }
