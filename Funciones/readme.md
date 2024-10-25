@@ -140,3 +140,15 @@ let registroUsuario=(nombre,apellido)=>{
 console.log(registroUsuario("edwin","chamo"))
 ```
 ### Diferencias
+las diferencias que tenemos al momento de crear una funcion declarativa, funcion como valor y flecha 
+### el  binding
+es una tecnica que guarda las funciones y variables (enlaces) sube al principio de la declaracion no el valor a la cabecera del archivo javascript
+```js
+function
+```
+## La Pila de llamadas (Call Stack)
+Es una tecnica que se usa para controlar de manera correcta la ejcucion de una funcion.
+**Averiguar sobre LIFO** algoritmo de estructura de datos
+```js
+//program que haga una ensala
+```
