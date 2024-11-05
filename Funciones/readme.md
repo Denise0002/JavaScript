@@ -148,7 +148,32 @@ function
 ```
 ## La Pila de llamadas (Call Stack)
 Es una tecnica que se usa para controlar de manera correcta la ejcucion de una funcion.
-**Averiguar sobre LIFO** algoritmo de estructura de datos
+**Averiguar sobre LIFO** algoritmo de estructura de datos de datos, tecnica
 ```js
 //program que haga una ensala
 ```
+
+## CLOUSE o Funciones de Cierre(Funciones que retornan Funciones)
+Un `closure` es una funcion que encapsula una serie de variables y definiciones locales que unicamente seran accesibles si son devueltas con el keyword `return`.
+Antes de uqe aparesca la version `ecma 6` los `closure` eran un patron creacional que nos permitia modularizar nuestro codigo en lugar de usar las `clases`, que eran populares en otros lenguajes pero que en javascript  aun no lo implementaba.
+```js
+//una  funcion que retorna otra funcion(por lo general es una funcion anonima)
+//funcion clasica
+function retornaValor(n){
+    return n+1
+}
+//llamando a la funcion clasica
+retornaValor(10)
+
+
+//funcion closure
+function retornaValor(){n
+    return function(){
+        return n+1
+    }
+}
+//llamando  a la funcion closure
+retornaValor(10)()
+```
+> [!NOTE]
+> Las funciones `closure` son usadas por que pueden mantener el valor de sus enlaces o variables locales en todo el proceso de la ejecucion de su funcion padra por cada llamada que se le realize.
