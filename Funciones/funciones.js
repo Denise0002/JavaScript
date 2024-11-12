@@ -94,17 +94,45 @@ actual y poder mostrarlo.*/
 // incre()
 // valueCount()
 
-function contador(){
-    this.contador=0
-    this.incre=function(){
-        this.contador++
-    }
-    this.decre=function(){
-        this.contador--
+// function contador(){
+//     this.contador=0
+//     this.incre=function(){
+//         this.contador++
+//     }
+//     this.decre=function(){
+//         this.contador--
+//     }
+// }
+// //realizamos la instancia
+// let count1=new contador()
+// console.log(count1.contador)
+// count1.incre()
+// console.log(count1.contador)
+
+function Contador(nombre){
+    this.count=0
+    this.nombre=nombre
+}
+Contador.prototype={
+    incremento:function(){
+        this.count++
+    },
+    decremento:function(){
+        this.count--
+    },
+    mostrarDatos:function(){
+        return `${this.count}, ${this.nombre}`
+    },
+    actualizaNombre:function(nuevoNombre){
+        this.nombre=nuevoNombre
     }
 }
-//realizamos la instancia
-let count1=new contador()
-console.log(count1.contador)
-count1.incre()
-console.log(count1.contador)
+// instanciar mi funcion
+let contadorUno=new Contador("the books")
+console.log(contadorUno.mostrarDatos())
+contadorUno.incremento()
+contadorUno.incremento()
+console.log(contadorUno.mostrarDatos())
+contadorUno.incremento()
+contadorUno.actualizaNombre("notebook")
+console.log(contadorUno.mostrarDatos())

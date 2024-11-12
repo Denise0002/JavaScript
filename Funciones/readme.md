@@ -204,3 +204,62 @@ for(let i=0;i<5;i++){
 > el problema principal de este tipo de funion, es que cuando creamos un nuevo objeto a partir de la funcion tipo clase, reservara espacio en la memoria para toda la clase y su valor creados eso quiere decir variable y funciones, cada vez que llamamos a una funcion esta se replica en la mempria.
 
 ## Prototype (Tarea averiguar y asus ejemplos)
+para crear un prototype tendremos que crear primero nuetra funcion principal que es la encargada de almacenar nuestras variables locales con las que trabajamos.
+Luego accederemos al prototype de nuestra funcion creada y en valor o variable de tipo objeto le indicaremos las funciones que tendra nuestra funcion principal que interactuara con nuestras variables locales.
+```js
+function Contador(nombre){
+    this.count=0
+    this.nombre=nombre
+}
+Contador:prototype={
+    incremento:function(){this.count++},
+    decremento:function(){this.count--},
+    mostrarDatos:function(){return `${this.count}, 
+    ${this.nombre}`}
+}
+```
+> [!NOTE]
+> Es una convencion usar como nombre nuestra  funcion principal, 1. que debe ser singular, 2. que es PalcalCase
+
+## TAREA
+- Recursion en funciones
+- Funciones Callbacks
+- 
+**Entidad:** Es una objeto que se puede secribir que tengan atributos y acciones.
+1. nombre de la clase
+2. Identificar atributos(variables)
+3. Identificar metodos(funciones)
+
+# Clases
+Las clases en javscript llegan en la vercion `EMAScript 6`, javascript no tenia al igual que otros lenguajes de programacion oriejntados a objetos las `clases` ya que js se enfocaba en la `programacion funcional`, sin embargo con la llegada es `ES6`, javascript adopta ser un lenguaje de `programacion multiparadigma`, entre ellos la programacion orientada a objetos con la llegada de las `clases`.
+## Estructura de una Clase
+Una clase esta separada de tres grandes secciones.
+1. El nombre de la clase que debera ser en singular y  en PascalCase.
+2. Debera tener atributos (variables y valores) estos deberan ser sustantivos y estar escritos en camelCase.
+3. Debera tener metodos (acciones , funciones) estos deberan ser verbos u estar esritos en camelCase.
+```js
+class Computadora{
+    //atributos
+    constructor(marca){
+        this.marca=marca
+        this.color=""
+        this.tipoCase="tower"
+    }
+    //metodos
+    encender(){
+        return "estoy encendiendo"
+    }
+    apagar(){
+        return "estoy cerrando secion y guardando mi informacion antes de apagar"
+    }
+    escribir(){
+        return "escribiendo mi informe"
+    }
+    jugar(){
+        return "juagndo little nighmares"
+    }
+}
+//instanciar
+let miPc=new Computador("gigabyte")
+miPc.encender()
+```
