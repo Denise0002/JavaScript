@@ -221,10 +221,42 @@ Contador:prototype={
 > [!NOTE]
 > Es una convencion usar como nombre nuestra  funcion principal, 1. que debe ser singular, 2. que es PalcalCase
 
-## TAREA
-- Recursion en funciones
-- Funciones Callbacks
-- 
+### TAREA
+## Recursion en funciones
+La recursión es un concepto en programación donde una función se llama a sí misma para resolver un problema. En otras palabras, una función recursiva realiza un llamado a sí misma con un argumento modificado hasta que se alcanza un caso base, que es la condición que detiene las llamadas recursivas.
+```js
+function factorial(n) {
+  // Caso base: si n es 0 o 1, devuelve 1
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  // Caso recursivo: n * factorial(n-1)
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // 120
+
+```
+## Funciones Callbacks
+¿Qué es una función de callback en JavaScript?
+En JavaScript, una función de callback es simplemente una función que se pasa como argumento a otra función y se ejecuta (o se "llama") en un momento posterior, generalmente después de que se haya completado una operación o tarea.
+Las funciones de callback se utilizan principalmente para manejar operaciones asíncronas o tareas que tardan un tiempo en completarse, como las peticiones de red (AJAX), la lectura de archivos, o la temporización (como en setTimeout o setInterval).
+```js
+// Definimos una función que acepta un callback
+function saludo(nombre, callback) {
+  console.log("Hola, " + nombre);
+  callback(); // Llamamos al callback después de saludar
+}
+
+// Definimos el callback
+function despedida() {
+  console.log("Adiós!");
+}
+
+// Pasamos el callback `despedida` a la función `saludo`
+saludo("Juan", despedida);
+    
+```
 **Entidad:** Es una objeto que se puede secribir que tengan atributos y acciones.
 1. nombre de la clase
 2. Identificar atributos(variables)
