@@ -235,7 +235,15 @@ function factorial(n) {
 }
 
 console.log(factorial(5)); // 120
-
+```
+//binding funcion creada en la cabecera
+```js
+function factorial(n){
+    if n==1{
+        return 1
+    }
+    return n*factorial(n-1)
+}
 ```
 ## Funciones Callbacks
 ¿Qué es una función de callback en JavaScript?
@@ -255,7 +263,26 @@ function despedida() {
 
 // Pasamos el callback `despedida` a la función `saludo`
 saludo("Juan", despedida);
-    
+```
+
+```js
+function uno(){
+    return "soy uno"
+}
+function dos(){
+    return "soy dos"
+}
+console.log(uno())
+console.log(dos())
+
+//con callback
+funcionuno(callback){
+    console.log("soy uno")
+    callback()
+} 
+
+uno(function(){console.log("soy dos")})
+
 ```
 **Entidad:** Es una objeto que se puede secribir que tengan atributos y acciones.
 1. nombre de la clase
