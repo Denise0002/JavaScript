@@ -97,6 +97,26 @@ vocales.pop()
 Descripción: Combina dos o más arrays en uno nuevo.
 Uso: arr.concat([4, 5]);
 ## Objetos
+Los objetos sont tipos de datos estructurados similares a las listas, para poder acceder a un elemento de la lista javascript les asignaba indices, en este caso los objetos como unica diferencia de las listas nosotros  podremos asignar el nombre del elemento al cual deseamos acceder a esto se le conoce como `clave:valor`
+Cada `clave:valor` es un elemento de un objetivo si deseamos crear mas elementos tendremos que separarlos por comas. 
 ### Creacion
+Para crear un objeto  debemos encerrara lso elementos en llaves `{}` este elemento estara conformado por su `clave:valor`.
+```js
+let datosJory=["jory","rodriguez",20,"M"]
+let datosJoryObjeto={
+    nombre:"jory",
+    apellido:"rodriguez",
+    edad:20,
+    sexo:"M",
+    chicas:["Lisa","Maria","Rosa","Fanny"],
+    direccion:{
+        tipoCallle:"Pasaje",
+        nombreCalle:"querobamba",
+        numeroVivienda:222,
+        numeroDeCuarto:5
+    },
+    accion:()=>{console.log("hola soy jory")}
+}
+````
 ### Acceder a un elemento del objeto
 ### Metodos 

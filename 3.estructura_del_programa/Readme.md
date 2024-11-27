@@ -28,7 +28,7 @@ window.prompt("como te llamas?")
 // si deseamos almacenar la respuesta usaremos una variable
 respuesta=window
 
-## expresiones y declaraciones 
+## Expresiones y Declaraciones 
 *expresiones* - en javascript un fragmento de codigo que produce un valor es llamada Expresion. tambien se dice que una expresion es el fragmento de una oracion.
 js
 1
