@@ -146,4 +146,6 @@ console.log(objetoPc)
 objetoPc["tarjeta"]="RTX 5600"
 console.log(objetoPc)
 //Averiguar como eliminar un elemnto de un objeto
+delete objetoPc["tarjeta"]; // Elimina la propiedad 'tarjeta' del objeto
+console.log(objetoPc);
 //Resolver los ejercicios de javascript del 7 al 10
