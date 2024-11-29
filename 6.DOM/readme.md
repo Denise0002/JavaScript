@@ -76,6 +76,7 @@ Y son los siguientes:
 <p id="uno">primer texto</p>
 <p id="dos">segundo texto</p>
 ```
+
 ```js
 let parrafo=document.getElementById("dos")
 ```
