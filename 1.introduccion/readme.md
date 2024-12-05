@@ -9,26 +9,35 @@
 > Los comentarios  nos ayudan a
 > entender nuestro codigo, y en ocasiones podemos usarlos para  silenciar temporalmente partes del codigo
 > ### Tipos de comentarios
-> 1. **Una sola linea**
->   ```js
-  
-    ```
-  ## Consola
-  La herramienta de Javascrip mas usada dentro de los navegadores es usada para la [depuracion](#depuracion) de nuestro codigo.
-  > [!TIP]
-  > #### Depuracion, es la tecnica que nos permite mostrar el codigo en las distintas faces de desarrollo, y verificar que el mensaje mostrado sea correcto. y verificando que el codigo no tenga errores de sintaxis de logica o de precaucion.
+
+1. **Una sola linea**
+
+```js
+//comentario de una sola línea
+```
+2. **Multiples líneas**
+```js
+/*
+comentario de multi linea
+*/
+```
+## Consola
+La herramienta de Javascrip mas usada dentro de los navegadores es usada para la [depuracion](#depuracion) de nuestro codigo.
+> [!TIP]
+> #### Depuracion, es la tecnica que nos permite mostrar el codigo en las distintas faces de desarrollo, y verificar que el mensaje mostrado sea correcto. y verificando que el codigo no tenga errores de sintaxis de logica o de precaucion.
+
 ### Tipos de mensajes de consola
 #### 1. Notificadores
-mostrar un mensaje por consola
+**Mostrar un mensaje por consola**
 ```js
 console.log("hola mundo")
 
 ```
-mostrar un mensaje de estilo informativo
+**Mostrar un mensaje de estilo informativo**
 ```js
 console.info("mensaje informativo")
 ```
-mostrar un mensaje de tipo alerta
+**Mostrar un mensaje de tipo alerta**
 ```js
 console.warn("mensaje de tipo alerta")
 ```
@@ -90,7 +99,6 @@ Las variables tienen  reglas muy especificas que debemos seguir a la hora de asi
 > #Correcto
 > edadAumno=45
   ```
-
 <!--> slife_gui
 =======
 # Introduccion
@@ -100,14 +108,15 @@ Las variables tienen  reglas muy especificas que debemos seguir a la hora de asi
   - Naiming
   - ##comentarios
   - es la parte de mi archivo de codigo que noes leido ni  ejecutado por el interprete de `js`.
+
 > [!TIP]
 > Los comentarios  nos ayudan a
 > entender nuestro codigo, y en ocasiones podemos usarlos para  silenciar temporalmente partes del codigo
-> ### Tipos de comentarios
-> 1. **Una sola linea**
->   ```js
+### Tipos de comentarios
+1. **Una sola linea**
+```js
   
-    ```
+```
   ## Consola
   La herramienta de Javascrip mas usada dentro de los navegadores es usada para la [depuracion](#depuracion) de nuestro codigo.
   > [!TIP]
